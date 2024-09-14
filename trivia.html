@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="US-en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Trivia</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Music Trivia</h1>
+        </header>
+        <main>
+            <section class="page-section" id="trivia-section">
+                <div id="username-module">
+                    <h2>Enter a username.</h2>
+                    <form id="username-form">
+                        <input type="text" id="username" name="username" >
+                        <input type="submit" value="Submit" >
+                    </form>
+                </div>
+                <div id="trivia-module">
+                    <h2 id="prompt"></h2>
+                    <form id="trivia-form">
+                        <div>
+                            <input type="radio" id="question1Input" name="question1">
+                            <label for="question1" id="question1Label"></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="question2" name="question2">
+                            <label for="question2" id="question2Label"></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="question3" name="question3">
+                            <label for="question3" id="question3Label"></label>
+                        </div>
+                        <div>
+                            <input type="radio" id="question4" name="question4">
+                            <label for="question4" id="question4Label"></label>
+                        </div>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>Created by connorldailey</h2>
+        </footer>
+        <script src="./assets/js/trivia.js"></script>
+    </body>
+</html>
