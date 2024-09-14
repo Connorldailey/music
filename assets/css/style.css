@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: darkblue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+header, footer {
+    display: flex;
+    padding: 1.5rem;
+    color: white;
+    background-color: var(--main-background);
+}
+
+footer {
+    justify-content: center;
+}
+
+main {
+    flex: 1 0 auto;
+}
