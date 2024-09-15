@@ -11,6 +11,15 @@ body {
     flex-direction: column;
     font-family:'Times New Roman', Times, serif;
     line-height: 1.5;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
 }
 
 header, footer {
@@ -27,6 +36,8 @@ footer {
 main {
     flex: 1 0 auto;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-row {
@@ -59,14 +70,76 @@ main {
     align-items: center;
 }
 
+#stats-table {
+    border: 1px solid black;
+}
+
+#stats-table th, td {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+#trivia-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#username-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trivia-section > p {
+    font-size: 300%;
+    align-self: center;
+}
+
 #trivia-module {
     display: none;
     flex-direction: column;
 }
 
+.spread-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#timer {
+    width: 3rem;
+    height: 3rem;
+    font-size: 150%;
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #trivia-form {
     display: flex;
     flex-direction: column;
+}
+
+#endgame-module {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#endgame-module ul {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#restart-button, #exit-button {
+    width: 100px;
+    margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {
